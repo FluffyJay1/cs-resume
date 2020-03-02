@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+.side-by-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entry {
+  background-color: #C8DCFB;
+  border-left: 3px solid #000080;
+  border-radius: 3px;
+  margin: 6px;
+  padding: 4px;
+}
+
+.thumbnail {
+  display: inline;
+  height: 32px;
+}
+
+.term {
+  background-color: #8080F0;
+  border-bottom: 3px solid #101010;
+  border-radius: 3px;
+  margin: 5px;
+  text-align: center;
+}
+
+.term p {
+  color: #DDDDDD;
+  font-size: 15px;
+  margin: 5px;
+}
+
+a, h2, h3, h4, h5, p, li {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+p, li {
+  margin-bottom: 0px;
+}
+
+a {
+  color: inherit;
+}
+
+
+p, li {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  height: 11in;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > section {
+  width: 50%;
+}
+
+#skills, #contact {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#contact {
+  justify-content: center;
+}

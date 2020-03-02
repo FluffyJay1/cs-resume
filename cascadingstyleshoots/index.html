@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+  Michael Yang
+  4/18/19
+
+  This is main page for CP2. It structures the bullet hell game. It is styled
+  by style.css and runs code from main.js. It also plays east-asian-bloom.wav,
+  a song I made which is a remix of another song, Oriental Blossom
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Cascading Style Shoots</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cascading Style Shoots</h1>
+      <audio id="music" src="east-asian-bloom.mp3" loop="" preload="auto"></audio>
+    </header>
+
+    <main>
+      <div id="game-window">
+        <div id="enemy-health"></div>
+        <div id="play-area"></div>
+        <aside id="interact">
+          <section id="start">
+            <button type="button" name="button">Play Game</button>
+          </section>
+          <section id="bonus-select" class="hidden">
+            <h2>Round end. Extra life awarded. Select a style to apply!</h2>
+            <fieldset>
+              <label for="bonus1">1</label>
+              <input id="bonus1" type="radio" name="bonus" value="1" checked="checked" />
+              <label for="bonus2">2</label>
+              <input id="bonus2" type="radio" name="bonus" value="2" />
+              <label>
+              </label>
+              <button type="button" name="button">Continue</button>
+            </fieldset>
+          </section>
+        </aside>
+        <aside id="hud">
+          <section id="score">
+            <h2>Score:</h2>
+            <p>0</p>
+          </section>
+          <section id="lives">
+            <h2>Lives:</h2>
+            <p>0</p>
+          </section>
+          <section id="applied-styles">
+            <h2>Applied Styles:</h2>
+            <ul>
+            </ul>
+          </section>
+        </aside>
+      </div>
+      <section>
+        <h2>How to play:</h2>
+        <p>
+          WASD to move. Space to move slower. Hit the enemy. Don't get hit.
+          Utilize the power of CSS to your advantage.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

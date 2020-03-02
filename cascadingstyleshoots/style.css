@@ -1,0 +1,117 @@
+/*
+Michael Yang
+4/18/19
+
+This is the style sheet for CP2. It styles index.html
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*EXTREMELY HACKY WAY TO AVOID HAVING TO USE position: relative TO STACK IMAGES*/
+.stacker {
+  width: 0px;
+  height: 0px;
+}
+
+.invuln {
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-window {
+  width: 800px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#game-window .width-upgrade {
+  width: 75%;
+}
+
+#enemy-health {
+  background-color: red;
+  align-self: flex-end;
+  width: 20px;
+  height: 100%;
+}
+
+#play-area {
+  background-color: black;
+  width: 50%;
+  height: 90%;
+  text-align: left;
+}
+
+#play-area > * {
+  position: relative;
+}
+
+#play-area .enemy img {
+  width: 16px;
+}
+
+#play-area .enemy-downgrade img {
+  width: 24px;
+}
+
+#play-area .player-bullet img {
+  width: 16px;
+}
+
+#play-area .player-bullet-upgrade img {
+  width: 32px;
+}
+
+#play-area .player-bullet-transparent img {
+  opacity: 0.5;
+}
+
+#play-area .enemy-bullet img {
+  width: 16px;
+}
+
+#play-area .enemy-bullet-downgrade img {
+  width: 12px;
+}
+
+#interact button {
+  font-family: 'Roboto', sans-serif;
+}
+
+#bonus-select fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hud {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hud section {
+  background-color: #AAAABB;
+  border: 4px solid black;
+  border-radius: 4px;
+  flex-grow: 1;
+}
